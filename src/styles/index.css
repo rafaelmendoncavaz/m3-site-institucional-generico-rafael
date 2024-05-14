@@ -157,9 +157,12 @@ body {
 }
 
 .faq__content--left {
-display: flex;
-flex-direction: column;
-gap: 2.0625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.0625rem;
+    position: sticky;
+    top: 10rem;
+    left: 0rem;
 }
 
 .faq__title {
@@ -254,6 +257,9 @@ gap: 2.0625rem;
     gap: 2.1875rem;
     padding: 5rem 3.25rem;
     width: 80%;
+    position: sticky;
+    top: 10rem;
+    right: 0rem;
 }
 
 .comments__title {
