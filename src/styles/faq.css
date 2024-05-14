@@ -1,0 +1,129 @@
+@import url(globalStyles.css);
+
+/* ===== FAQ ===== */
+
+.section__container--faq {
+    background-color: var(--gray-2);
+    padding-block: 5.125rem;
+    padding-inline: clamp(4rem, -8.311rem + 19.218vw, 14.75rem);
+}
+
+.section__content--faq {
+    display: flex;
+    gap: 3.5rem;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+/* ===== Left Side ===== */
+
+.faq__container--left {
+    width: 50%;
+}
+
+.faq__content--left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.0625rem;
+    position: sticky;
+    top: 10rem;
+    left: 0rem;
+}
+
+.faq__title {
+    line-height: 4rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--gray-6);
+}
+
+.faq__paragraph {
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    color: var(--gray-4);
+    text-align: justify;
+    width: 90%;
+}
+
+.button__faq--modal {
+    padding: 1.25rem 2rem;
+    border: solid .0625rem transparent;
+    background-color: var(--brand-1);
+    color: var(--gray-7);
+    font-size: 1rem;
+    font-weight: 600;
+    align-self: self-start;
+}
+
+.button__faq--modal:hover {
+    background-color: var(--brand-2);
+    border-color: var(--brand-2);
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+/* ===== Right Side ===== */
+
+
+.list__questions__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    width: 50%;
+}
+
+.questions__container--content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.questions__title {
+    line-height: 3.2rem;
+    font-size: clamp(1.7rem, 0.784rem + 1.43vw, 2.5rem);
+    font-weight: 600;
+    color: var(--gray-6);
+    text-align: center;
+}
+
+.questions__paragraph {
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--gray-4);
+    text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+    .section__container--faq {
+        padding-block: clamp(4rem, 0.607rem + 7.059vw, 5.125rem);
+        padding-inline: clamp(3rem, -0.016rem + 6.275vw, 4rem);
+    }
+
+    /* ===== Left Side ===== */
+
+    .faq__title {
+        font-size: clamp(2rem, 1.095rem + 1.882vw, 2.3rem);
+    }
+
+    .faq__paragraph {
+        font-size: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+        width: 100%;
+    }
+
+    .button__faq--modal {
+        padding-block: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+        padding-inline: clamp(1.5rem, -0.008rem + 3.137vw, 2rem);
+        font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+    }
+
+    /* ===== Right Side ===== */
+
+    .questions__title {
+        font-size: clamp(1.3rem, 0.094rem + 2.51vw, 1.7rem);
+    }
+
+    .questions__paragraph {
+        font-size: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+    }
+}

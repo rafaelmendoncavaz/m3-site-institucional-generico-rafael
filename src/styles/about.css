@@ -1,0 +1,52 @@
+@import url(globalStyles.css);
+
+/* ===== About Section ===== */
+
+.section__container--about {
+    background-color: var(--gray-1);
+    padding-block: 5.125rem;
+    padding-inline: clamp(4rem, -8.311rem + 19.218vw, 14.75rem);
+}
+
+.section__content--about {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.about__container {
+    width: 50%;
+}
+
+.section__about--title {
+    line-height: 4rem;
+    font-size: clamp(2.3rem, 2.071rem + 0.358vw, 2.5rem);
+    font-weight: 600;
+    color: var(--gray-6);
+}
+
+.section__about--paragraph {
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--gray-5);
+    text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+    .section__container--about {
+        padding-block: clamp(4rem, 0.607rem + 7.059vw, 5.125rem);
+        padding-inline: clamp(3rem, -0.016rem + 6.275vw, 4rem);
+    }
+
+    .section__about--title {
+        font-size: clamp(2rem, 1.095rem + 1.882vw, 2.3rem);
+    }
+
+    .section__about--paragraph {
+        font-size: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+    }
+}

@@ -1,0 +1,79 @@
+@import url(globalStyles.css);
+
+/* ===== Banner Section ===== */
+
+.section__container--intro {
+    background-color: var(--gray-2);
+    padding-block: 15.625rem;
+    padding-inline: clamp(4rem, -8.311rem + 19.218vw, 14.75rem);
+}
+
+.section__content--intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.main__section--title {
+    color: var(--gray-7);
+    font-size: clamp(2.4rem, 1.427rem + 1.52vw, 3.25rem);
+    line-height: 4.55rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.span--highlight {
+    color: var(--brand-1);
+}
+
+.section__paragraph--intro {
+    color: var(--gray-4);
+    font-size: clamp(1rem, 0.714rem + 0.447vw, 1.25rem);
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+    width: 65%;
+}
+
+.section__button--aboutus {
+    padding-block: 1.25rem;
+    padding-inline: 2rem;
+    border: solid .0625rem transparent;
+    background-color: var(--brand-1);
+    color: var(--gray-7);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.section__button--aboutus:hover {
+    background-color: var(--brand-2);
+    border-color: var(--brand-2);
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .section__container--intro {
+        padding-block: clamp(10rem, -6.963rem + 35.294vw, 15.625rem);
+        padding-inline: clamp(3rem, -0.016rem + 6.275vw, 4rem);
+    }
+
+    .main__section--title {
+        font-size: clamp(1.7rem, -0.411rem + 4.392vw, 2.4rem);
+        line-height: clamp(2rem, -1.016rem + 6.275vw, 3rem);
+    }
+
+    .section__paragraph--intro {
+        font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+        width: 90%;
+    }
+
+    .section__button--aboutus {
+        padding-block: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+        padding-inline: clamp(1.5rem, -0.008rem + 3.137vw, 2rem);
+        font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+    }
+}

@@ -1,0 +1,135 @@
+@import url(globalStyles.css);
+
+
+/* ===== Modal ===== */
+
+.modal__container {
+    background-color: var(--gray-2);
+    border: solid .125rem var(--brand-1);
+}
+
+.modal__container::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+    width: 25rem;
+    padding: 2.5rem 1.75rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.modal__title__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__title {
+    line-height: 3.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--gray-7);
+    justify-content: center;
+}
+
+.modal--close {
+    width: 2rem;
+    height: 2rem;
+    border: solid .125rem transparent;
+    border-radius: .25rem;
+    padding: 0rem .75rem;
+    background-color: var(--gray-3);
+    line-height: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    color: var(--gray-4);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal--close:hover {
+    cursor: pointer;
+    background-color: var(--gray-1);
+    transition: 0.5s ease;
+}
+
+.modal__paragraph {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-4);
+    text-align: justify;
+}
+
+.modal__input {
+    padding: .875rem 1.25rem;
+    background-color: var(--gray-1);
+    border: solid .0625rem var(--gray-1);
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--gray-4);
+}
+
+.modal__input:focus {
+    outline: none;
+}
+
+.modal__input:focus::placeholder {
+    opacity: 0;
+}
+
+.modal__input:valid {
+    background-color: var(--gray-3);
+}
+
+.modal__button--submit {
+    padding: 1rem 2rem;
+    background-color: var(--brand-1);
+    border: solid 1px var(--brand-1);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-7);
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal__content {
+        padding: 1rem 1.5rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .modal__title {
+        font-size: clamp(1.25rem, 0.496rem + 1.569vw, 1.5rem);
+    }
+
+    .modal--close {
+        font-size: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .modal__paragraph {
+        font-size: clamp(0.8rem, 0.498rem + 0.627vw, 0.9rem);
+    }
+
+    .modal__input {
+        font-size: 1rem;
+        padding-block: .625rem;
+        padding-inline: 1rem;
+    }
+
+    .modal__button--submit {
+        font-size: clamp(0.8rem, 0.498rem + 0.627vw, 0.9rem);
+        padding-block: .625rem;
+        padding-inline: 1rem;
+    }
+}

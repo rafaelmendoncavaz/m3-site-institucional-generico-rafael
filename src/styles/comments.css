@@ -1,0 +1,143 @@
+@import url(globalStyles.css);
+
+/* ===== Comments Section ===== */
+
+.section__container--comments {
+    background-color: var(--gray-2);
+    padding-block: 5.125rem;
+    padding-inline: clamp(4rem, -8.311rem + 19.218vw, 14.75rem);
+}
+
+.comments__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+/* ===== Right Side ===== */
+
+.section__comments__content--right {
+    padding-left: 5.4rem;
+    width: 40%;
+}
+
+.comments__title--container {
+    background-color: var(--brand-1);
+    gap: 2.1875rem;
+    padding-block: clamp(4rem, 2.855rem + 1.788vw, 5rem); 
+    padding-inline: clamp(2.25rem, 1.105rem + 1.788vw, 3.25rem);
+    position: sticky;
+    top: 10rem;
+    right: 0rem;
+}
+
+.comments__title {
+    line-height: 4rem;
+    font-size: clamp(1.9rem, 1.213rem + 1.073vw, 2.5rem);
+    font-weight: 600;
+    color: var(--gray-7);
+}
+
+.comments__paragraph {
+    line-height: 1.875rem;
+    font-size: clamp(1rem, 0.714rem + 0.447vw, 1.25rem);
+    font-weight: 400;
+    color: var(--gray-7);
+    text-align: justify;
+
+}
+
+/* ===== Left Side ===== */
+
+.section__comments__content--left {
+    width: 50%;
+}
+
+.comments__list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.comments__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-year__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.comment--name {
+    line-height: 3.2rem;
+    font-size: clamp(1.3rem, 0.498rem + 1.251vw, 2rem);
+    font-weight: 600;
+    color: var(--gray-6);
+}
+
+.comment--year {
+    line-height: 1.5rem;
+    font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+    font-weight: 400;
+    color: var(--gray-4);
+}
+
+.comment {
+    line-height: 27px;
+    font-size: clamp(1rem, 0.857rem + 0.223vw, 1.125rem);
+    font-weight: 400;
+    color: var(--gray-5);
+    text-align: justify;
+    width: 65%;
+}
+
+@media screen and (max-width: 1024px) {
+    .section__container--comments {
+        padding-block: clamp(4rem, 0.607rem + 7.059vw, 5.125rem);
+        padding-inline: clamp(3rem, -0.016rem + 6.275vw, 4rem);
+    }
+
+    /* ===== Left Side ===== */
+
+    .comments__content {
+        display: block;
+    }
+
+    .name-year__container {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .comment--name {
+        font-size: clamp(1.3rem, 0.094rem + 2.51vw, 1.7rem);
+    }
+
+    .comment--year {
+        font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+    }
+
+    .comment {
+        width: 100%;
+        font-size: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+    }
+
+    /* ===== Right Side ===== */
+
+    .section__comments__content--right {
+        width: 55%;
+    }
+
+    .comments__title {
+        font-size: clamp(1.3rem, -1.113rem + 5.02vw, 2.1rem);
+    }
+
+    .comments__paragraph {
+        font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+    }
+}
