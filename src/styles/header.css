@@ -53,3 +53,29 @@
         line-height: clamp(1.25rem, 0.496rem + 1.569vw, 1.5rem);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        padding-inline: clamp(1.75rem, 1.439rem + 1.17vw, 2rem);
+    }
+
+    .header__content {
+        gap: 1rem;
+    }
+
+    .header__button--modal {
+        padding-block: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+        padding-inline: clamp(0.75rem, 0.127rem + 2.339vw, 1.25rem);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__container {
+        padding-inline: clamp(0.8rem, 0.8rem + 0.755vw, 1rem);
+        border-bottom: solid .1250rem var(--brand-1);
+    }
+
+    .header__button--modal {
+        display: none;
+    }
+}

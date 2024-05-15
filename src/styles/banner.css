@@ -77,3 +77,41 @@
         font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .section__container--intro {
+        padding-block: clamp(10rem, -6.963rem + 35.294vw, 15.625rem);
+        padding-inline: clamp(1.75rem, 1.439rem + 1.17vw, 2rem);
+    }
+
+    .main__section--title {
+        font-size: clamp(2rem, 1.377rem + 2.339vw, 2.5rem);
+        line-height: clamp(2rem, 0.754rem + 4.678vw, 3rem);
+    }
+
+    .section__paragraph--intro {
+        font-size: clamp(1rem, 0.564rem + 1.637vw, 1.35rem);
+        width: 90%;
+    }
+
+    .section__button--aboutus {
+        padding-block: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
+        padding-inline: clamp(1.5rem, -0.008rem + 3.137vw, 2rem);
+        font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section__container--intro {
+        padding-inline: clamp(0.8rem, 0.8rem + 0.755vw, 1rem);
+    }
+
+    .main__section--title {
+        font-size: clamp(2.25rem, 2.249rem + 0.943vw, 2.5rem);
+        line-height: clamp(2rem, 1.998rem + 3.774vw, 3rem);
+    }
+
+    .section__paragraph--intro {
+        font-size: clamp(1rem, 0.999rem + 0.943vw, 1.25rem);
+    }
+}

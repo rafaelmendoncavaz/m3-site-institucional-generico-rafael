@@ -141,3 +141,97 @@
         font-size: clamp(0.8rem, 0.197rem + 1.255vw, 1rem);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .section__container--comments {
+        padding-block: clamp(4rem, 0.607rem + 7.059vw, 5.125rem);
+        padding-inline: clamp(1.75rem, 1.439rem + 1.17vw, 2rem);
+    }
+
+    .comments__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* ===== Left Side/Bottom Side ===== */
+
+    .section__comments__content--left {
+        width: 100%;
+    }
+
+    .comments__content {
+        display: block;
+    }
+
+    .comments__list__container {
+        gap: 2rem;
+    }
+
+    .name-year__container {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .comment--name {
+        font-size: clamp(1.4rem, 1.151rem + 0.936vw, 1.6rem);
+    }
+
+    .comment--year {
+        font-size: clamp(1rem, 0.813rem + 0.702vw, 1.15rem);
+    }
+
+    .comment {
+        width: 100%;
+        font-size: clamp(1rem, 0.813rem + 0.702vw, 1.15rem);
+    }
+
+    /* ===== Right Side/Top Side ===== */
+
+    .section__comments__content--right {
+        width: 100%;
+        padding-left: 0rem;
+    }
+
+    .comments__title {
+        font-size: clamp(1.9rem, 1.775rem + 0.468vw, 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .comments__paragraph {
+        font-size: clamp(1rem, 0.813rem + 0.702vw, 1.15rem);
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__container--comments {
+        padding-inline: clamp(0.8rem, 0.8rem + 0.755vw, 1rem);
+    }
+
+    /* ===== Left Side/Bottom Side ===== */
+
+    .comment--name {
+        font-size: clamp(1.4rem, 1.4rem + 0.755vw, 1.6rem);
+    }
+
+    .comment--year {
+        font-size: clamp(0.8rem, 0.8rem + 0.189vw, 0.85rem);
+    }
+
+    .comment {
+        font-size: clamp(0.9rem, 0.9rem + 0.377vw, 1rem);
+    }
+
+    /* ===== Right Side/Top Side ===== */
+
+    .comments__title {
+        font-size: clamp(1.8rem, 1.8rem + 0.377vw, 1.9rem);
+    }
+
+    .comments__paragraph {
+        font-size: clamp(1.15rem, 1.15rem + 0.377vw, 1.25rem);
+    }
+}

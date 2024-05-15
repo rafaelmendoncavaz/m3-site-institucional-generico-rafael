@@ -127,3 +127,85 @@
         font-size: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .section__container--faq {
+        padding-block: clamp(4rem, 0.607rem + 7.059vw, 5.125rem);
+        padding-inline: clamp(1.75rem, 1.439rem + 1.17vw, 2rem);
+    }
+
+    .section__content--faq {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    /* ===== Left Side/Top Side ===== */
+
+    .faq__container--left {
+        width: 100%;
+    }
+
+    .faq__title {
+        font-size: clamp(2.25rem, 1.939rem + 1.17vw, 2.5rem);
+        text-align: center;
+    }
+
+    .faq__paragraph {
+        font-size: clamp(1.15rem, 1.025rem + 0.468vw, 1.25rem);  
+        width: 100%;
+    }
+
+    .button__faq--modal {
+        width: 100%;
+        padding-block: clamp(1.25rem, 1.063rem + 0.702vw, 1.4rem);
+        padding-inline: clamp(1.5rem, -0.008rem + 3.137vw, 2rem);
+        font-size: clamp(1rem, 0.938rem + 0.234vw, 1.05rem);
+    }
+
+    /* ===== Right Side/Bottom Side ===== */
+
+    .list__questions__container {
+        width: 100%;
+    }
+
+    .questions__title {
+        font-size: clamp(1.5rem, 1.189rem + 1.17vw, 1.75rem);
+        text-align: center;
+    }
+
+    .questions__paragraph {
+        font-size: clamp(1rem, 0.689rem + 1.17vw, 1.25rem);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section__container--faq {
+        padding-inline: clamp(0.8rem, 0.8rem + 0.755vw, 1rem);
+    }
+
+    /* ===== Left Side/Top Side ===== */
+
+    .faq__title {
+        font-size: clamp(1.8rem, 1.8rem + 0.755vw, 2rem);
+    }
+
+    .faq__paragraph {
+        font-size: clamp(1.15rem, 1.15rem + 0.377vw, 1.25rem);
+    }
+
+    .button__faq--modal {
+        font-size: clamp(0.9rem, 0.9rem + 0.377vw, 1rem);
+    }
+
+    /* ===== Right Side/Bottom Side ===== */
+
+    .questions__title {
+        font-size: clamp(1.25rem, 1.25rem + 0.377vw, 1.35rem);
+        text-align: center;
+    }
+
+    .questions__paragraph {
+        font-size: clamp(1rem, 1rem + 0.566vw, 1.15rem);
+    }
+}

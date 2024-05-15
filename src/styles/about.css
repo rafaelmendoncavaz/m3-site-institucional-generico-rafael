@@ -50,3 +50,44 @@
         font-size: clamp(1rem, 0.246rem + 1.569vw, 1.25rem);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .section__container--about {
+        padding-block: clamp(4rem, 0.607rem + 7.059vw, 5.125rem);
+        padding-inline: clamp(1.75rem, 1.439rem + 1.17vw, 2rem);
+    }
+
+    .section__content--about {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .about__container {
+        width: 100%;
+    }
+
+    .section__about--title {
+        font-size: clamp(2.25rem, 1.939rem + 1.17vw, 2.5rem);
+        text-align: center;
+    }
+
+    .section__about--paragraph {
+        font-size: clamp(1.15rem, 1.025rem + 0.468vw, 1.25rem);  
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section__container--about {
+        padding-inline: clamp(0.8rem, 0.8rem + 0.755vw, 1rem);
+    }
+
+    .section__about--title {
+        font-size: clamp(1.75rem, 1.749rem + 0.943vw, 2rem);
+        text-align: center;
+    }
+
+    .section__about--paragraph {
+        font-size: clamp(1rem, 0.999rem + 0.943vw, 1.25rem);
+    }
+}
